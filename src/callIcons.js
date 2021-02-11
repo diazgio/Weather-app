@@ -2,7 +2,7 @@ const Skycons = require('skycons')(window);
 
 const skycon = new Skycons({ color: 'white' });
 
-const setIcons = (data) => { 
+const setIcons = (data) => {
   if (data.weather[0].main === 'Clouds') {
     skycon.set('icon', 'cloudy');
     skycon.play();
@@ -44,6 +44,6 @@ const setIcons = (data) => {
     skycon.set('icon', 'clear_day');
     skycon.play();
   }
-}
+};
 
 export default setIcons;

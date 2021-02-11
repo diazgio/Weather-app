@@ -22,9 +22,17 @@
   },
   "homepage": "https://github.com/diazgio/Wheater-app#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "html-webpack-plugin": "^5.0.0",
     "resolve-url-loader": "^3.1.2",
+    "stylelint": "^13.3.3",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.17.2",
     "webpack": "^5.21.2",
     "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"

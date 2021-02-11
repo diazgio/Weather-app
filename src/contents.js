@@ -4,12 +4,12 @@ const contents = (data) => {
   const { main } = data;
 
 
-  //---------Display information-------------
+  // ---------Display information-------------
 
   const infoContainer = document.createElement('div');
   infoContainer.classList.add('info-cont');
 
-  const infoIconCont = document.createElement('div')
+  const infoIconCont = document.createElement('div');
   infoIconCont.classList.add('info-icon-cont');
 
   const infoIcon = document.createElement('canvas');
@@ -38,7 +38,7 @@ const contents = (data) => {
 
   const infoCityWheater = document.createElement('h3');
   infoCityWheater.classList.add('info-city-wheater');
-  infoCityWheater.innerHTML = `${data['weather'][0]['description']}`;
+  infoCityWheater.innerHTML = `${data.weather[0].description}`;
 
   const infoDescCont = document.createElement('div');
   infoDescCont.classList.add('info-desc-cont');
@@ -77,7 +77,7 @@ const contents = (data) => {
   infoDescPressure.classList.add('info-p');
   infoDescPressure.innerHTML = `Pressure: ${data.main.pressure} pascal`;
 
-  //----------Button to change values------------------------
+  // ----------Button to change values------------------------
 
   const changeContainer = document.createElement('div');
   changeContainer.classList.add('change-cont');
@@ -86,7 +86,7 @@ const contents = (data) => {
   changeBtn.classList.add('change-btn');
   changeBtn.innerHTML = 'Change Units';
 
-  //----------Appended section-----------------------------
+  // ----------Appended section-----------------------------
 
   body.appendChild(infoContainer);
   infoContainer.appendChild(infoIconCont);
@@ -115,6 +115,6 @@ const contents = (data) => {
 
 
   return body;
-}
+};
 
 export default contents;

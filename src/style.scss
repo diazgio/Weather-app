@@ -10,6 +10,7 @@ body {
 
 .header {
   text-align: center;
+
   .title {
     margin: 0 0 3rem 0;
     padding-top: 3rem;
@@ -20,6 +21,7 @@ body {
 .inp-cont {
   text-align: center;
   margin-bottom: 3rem;
+
   .inp-text {
     background: #e7e7e7;
     height: 1.5rem;
@@ -42,6 +44,12 @@ body {
   display: flex;
   width: 50rem;
   height: 18rem;
+
+  .degrees-cont {
+    display: flex;
+    align-items: center;
+  }
+
   .info-icon-cont {
     .info-icon1 {
       color: white;
@@ -52,6 +60,7 @@ body {
     .info-city-name,
     .degrees-cont {
       margin-bottom: 1rem;
+
       .degrees-escale {
         margin-left: 0.3rem;
       }
@@ -61,11 +70,13 @@ body {
   .info-desc-cont {
     .degrees-cont {
       margin-bottom: 1rem;
+
       .degrees-escale1,
       .degrees-escale2 {
         margin-left: 0.3rem;
       }
     }
+
     .info-p {
       margin-bottom: 1rem;
     }
@@ -82,21 +93,18 @@ body {
     align-items: center;
     color: white;
   }
-
-  .degrees-cont {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .change-cont {
   text-align: center;
+
   .change-btn {
     padding: 0.5rem;
     background: white;
     border-radius: 10px;
     font-weight: bolder;
   }
+
   .change-btn:hover {
     cursor: pointer;
   }

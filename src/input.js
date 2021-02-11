@@ -1,7 +1,7 @@
 const inputs = () => {
   const body = document.querySelector('body');
 
-  //--------------Header------------------
+  // --------------Header------------------
 
   const titleContainer = document.createElement('header');
   titleContainer.classList.add('header');
@@ -10,13 +10,13 @@ const inputs = () => {
   title.classList.add('title');
   title.innerHTML = 'Weather App';
 
-  //----------Inputs------------------------
+  // ----------Inputs------------------------
 
   const inputContainer = document.createElement('div');
   inputContainer.classList.add('inp-cont');
 
   const inputText = document.createElement('input');
-  inputText.classList.add('inp-text')
+  inputText.classList.add('inp-text');
   inputText.type = 'text';
   inputText.placeholder = 'Enter city here';
 
@@ -34,6 +34,6 @@ const inputs = () => {
   inputContainer.appendChild(inputBtn);
 
   return body;
-}
+};
 
 export default inputs;

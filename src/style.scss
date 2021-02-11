@@ -6,7 +6,6 @@
 
 body {
   height: 100vh;
-  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
 }
 
 .header {
@@ -49,6 +48,29 @@ body {
     }
   }
 
+  .info-city-cont {
+    .info-city-name,
+    .degrees-cont {
+      margin-bottom: 1rem;
+      .degrees-escale {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+
+  .info-desc-cont {
+    .degrees-cont {
+      margin-bottom: 1rem;
+      .degrees-escale1,
+      .degrees-escale2 {
+        margin-left: 0.3rem;
+      }
+    }
+    .info-p {
+      margin-bottom: 1rem;
+    }
+  }
+
   .info-icon-cont,
   .info-city-cont,
   .info-desc-cont {
@@ -63,5 +85,19 @@ body {
 
   .degrees-cont {
     display: flex;
+    align-items: center;
+  }
+}
+
+.change-cont {
+  text-align: center;
+  .change-btn {
+    padding: 0.5rem;
+    background: white;
+    border-radius: 10px;
+    font-weight: bolder;
+  }
+  .change-btn:hover {
+    cursor: pointer;
   }
 }

@@ -1,7 +1,9 @@
-const Contents = (data) => {
+const contents = (data) => {
   const body = document.querySelector('body');
 
   const { main } = data;
+
+  //--------------Header------------------
 
   const titleContainer = document.createElement('header');
   titleContainer.classList.add('header');
@@ -9,6 +11,8 @@ const Contents = (data) => {
   const title = document.createElement('h1');
   title.classList.add('title');
   title.innerHTML = 'Weather App';
+
+  //------------Information----------------
 
   const inputContainer = document.createElement('div');
   inputContainer.classList.add('inp-cont');
@@ -53,7 +57,7 @@ const Contents = (data) => {
   degreesEscale.classList.add('degrees-escale');
   degreesEscale.innerHTML = '°C';
 
-  const infoCityWheater = document.createElement('h4');
+  const infoCityWheater = document.createElement('h3');
   infoCityWheater.classList.add('info-city-wheater');
   infoCityWheater.innerHTML = `${data['weather'][0]['description']}`;
 
@@ -67,19 +71,19 @@ const Contents = (data) => {
   degreesContMin.classList.add('degrees-cont');
 
   const infoDescTempMax = document.createElement('p');
-  infoDescTempMax.classList.add('info-p');
+  infoDescTempMax.classList.add('info-p1');
   infoDescTempMax.innerHTML = `Max temp: ${Math.floor(data.main.temp_max)}`;
 
   const degreesEscale1 = document.createElement('h3');
-  degreesEscale1.classList.add('degrees-escale');
+  degreesEscale1.classList.add('degrees-escale1');
   degreesEscale1.innerHTML = '°C';
 
   const infoDescTempMin = document.createElement('p');
-  infoDescTempMin.classList.add('info-p');
+  infoDescTempMin.classList.add('info-p2');
   infoDescTempMin.innerHTML = `Min temp: ${Math.floor(data.main.temp_min)}`;
 
   const degreesEscale2 = document.createElement('h3');
-  degreesEscale2.classList.add('degrees-escale');
+  degreesEscale2.classList.add('degrees-escale2');
   degreesEscale2.innerHTML = '°C';
 
   const infoDescVisibility = document.createElement('p');
@@ -94,6 +98,16 @@ const Contents = (data) => {
   infoDescPressure.classList.add('info-p');
   infoDescPressure.innerHTML = `Pressure: ${data.main.pressure} pascal`;
 
+  //----------Button to change values------------------------
+
+  const changeContainer = document.createElement('div');
+  changeContainer.classList.add('change-cont');
+
+  const changeBtn = document.createElement('a');
+  changeBtn.classList.add('change-btn');
+  changeBtn.innerHTML = 'Change Units';
+
+  //----------Appended section-----------------------------
 
   body.appendChild(titleContainer);
   titleContainer.appendChild(title);
@@ -124,8 +138,11 @@ const Contents = (data) => {
   infoDescCont.appendChild(infoDescHumidity);
   infoDescCont.appendChild(infoDescPressure);
 
+  body.appendChild(changeContainer);
+  changeContainer.appendChild(changeBtn);
+
 
   return body;
 }
 
-export default Contents;
+export default contents;

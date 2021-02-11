@@ -3,29 +3,8 @@ const contents = (data) => {
 
   const { main } = data;
 
-  //--------------Header------------------
 
-  const titleContainer = document.createElement('header');
-  titleContainer.classList.add('header');
-
-  const title = document.createElement('h1');
-  title.classList.add('title');
-  title.innerHTML = 'Weather App';
-
-  //------------Information----------------
-
-  const inputContainer = document.createElement('div');
-  inputContainer.classList.add('inp-cont');
-
-  const inputText = document.createElement('input');
-  inputText.classList.add('inp-text')
-  inputText.type = 'text';
-  inputText.placeholder = 'Enter city here';
-
-  const inputBtn = document.createElement('button');
-  inputBtn.classList.add('inp-btn');
-  inputBtn.type = 'button';
-  inputBtn.innerHTML = 'Search';
+  //---------Display information-------------
 
   const infoContainer = document.createElement('div');
   infoContainer.classList.add('info-cont');
@@ -108,13 +87,6 @@ const contents = (data) => {
   changeBtn.innerHTML = 'Change Units';
 
   //----------Appended section-----------------------------
-
-  body.appendChild(titleContainer);
-  titleContainer.appendChild(title);
-
-  body.appendChild(inputContainer);
-  inputContainer.appendChild(inputText);
-  inputContainer.appendChild(inputBtn);
 
   body.appendChild(infoContainer);
   infoContainer.appendChild(infoIconCont);

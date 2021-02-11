@@ -1,9 +1,12 @@
 import './src/style.scss';
+import inputs from './src/input';
 import contents from './src/contents';
 import setIcons from "./src/callIcons";
 import groundsColors from './src/grounds';
 
 const key = '468b57438c63578229946edbda74f4bf';
+
+inputs();
 
 const getWeather = async (value) => {
   const body = document.querySelector('body');
@@ -25,6 +28,7 @@ const getWeather = async (value) => {
       searchBtn.addEventListener('click', e => {
         e.preventDefault();
         body.innerHTML = '';
+        inputs();
         getWeather(inputValue.value)
       });
 
@@ -58,7 +62,10 @@ const getWeather = async (value) => {
         }
       });
   } catch (error) {
-    console.log(error)
+    const inputValue = document.querySelector('.inp-text');
+    inputValue.value = '';
+    inputValue.placeholder = 'Enter a valid city';
+    getWeather('Lima');
   }
 };
 

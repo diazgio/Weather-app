@@ -33,6 +33,7 @@
     "css-loader": "^5.0.2",
     "postcss-loader": "^5.0.0",
     "sass-loader": "^11.0.1",
+    "skycons": "^1.0.0",
     "styles-loader": "^3.0.0"
   }
 }

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+}
+
+.header {
+  text-align: center;
+  .title {
+    margin: 0 0 3rem 0;
+    padding-top: 3rem;
+    color: white;
+  }
+}
+
+.inp-cont {
+  text-align: center;
+  margin-bottom: 3rem;
+  .inp-text {
+    background: #e7e7e7;
+    height: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  .inp-btn {
+    background: #e7e7e7;
+    height: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+  }
+}
+
+.info-cont {
+  margin: 0 auto;
+  display: flex;
+  width: 50rem;
+  height: 18rem;
+  .info-icon-cont {
+    .info-icon1 {
+      color: white;
+    }
+  }
+
+  .info-icon-cont,
+  .info-city-cont,
+  .info-desc-cont {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+
+  .degrees-cont {
+    display: flex;
+  }
+}

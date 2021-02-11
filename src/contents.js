@@ -1,5 +1,3 @@
-import SetIcons from "./callIcons";
-
 const Contents = (data) => {
   const body = document.querySelector('body');
 

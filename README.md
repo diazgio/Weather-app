@@ -5,7 +5,7 @@
 
 > With this project, you can search the weather in any city in the world in real time, displaying all interesting data like, tempeture, pressure, visibility etc.
 
-![screenshot](./screenshot.png)
+![screenshot](./src/images/screenshot.png)
 
 ## :octocat: Usage
 
